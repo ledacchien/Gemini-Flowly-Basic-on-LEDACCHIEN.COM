@@ -145,4 +145,16 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
-                response = st.session_state.chat.send_message(prompt, stream=T
+                # DÒNG ĐÃ SỬA LỖI
+                response = st.session_state.chat.send_message(prompt, stream=True)
+                
+                def stream_handler():
+                    for chunk in response:
+                        yield chunk.text
+                
+                full_response = st.write_stream(stream_handler)
+                # Thêm tin nhắn hoàn chỉnh của AI vào lịch sử
+                st.session_state.history.append({"role": "model", "parts": [full_response]})
+
+            except Exception as e:
+                st.error(f"Đã xảy ra lỗi khi gọi API của Gemini: {e}")
