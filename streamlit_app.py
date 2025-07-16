@@ -1,6 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import os
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
 # ==== CẤU HÌNH BAN ĐẦU ====
 
@@ -19,7 +20,6 @@ def rfile(name_file):
 
 # --- Lấy API Key và cấu hình Gemini ---
 try:
-    # Lấy API key từ Streamlit secrets
     google_api_key = st.secrets.get("GOOGLE_API_KEY")
     if not google_api_key:
         st.error("Lỗi: Vui lòng cung cấp GOOGLE_API_KEY trong tệp secrets.toml.")
@@ -32,10 +32,9 @@ except Exception as e:
 # ==== KIỂM TRA MẬT KHẨU ====
 def check_password():
     """Hiển thị màn hình đăng nhập và kiểm tra mật khẩu từ file."""
-    # Đọc mật khẩu từ tệp password.txt
     PASSWORD = rfile("password.txt")
     if PASSWORD:
-        PASSWORD = PASSWORD.strip() # Loại bỏ khoảng trắng thừa
+        PASSWORD = PASSWORD.strip()
     else:
         st.error("Lỗi: Không tìm thấy hoặc không đọc được tệp 'password.txt'.")
         st.stop()
@@ -50,33 +49,52 @@ def check_password():
         if st.button("Đăng nhập"):
             if password_input == PASSWORD:
                 st.session_state["authenticated"] = True
-                st.rerun() # Chạy lại app sau khi đăng nhập thành công
+                st.rerun()
             else:
                 st.error("Sai mật khẩu, vui lòng thử lại.")
         st.stop()
 
 check_password()
 
+
+# --- GIAO DIỆN THANH BÊN (SIDEBAR) ---
+with st.sidebar:
+    st.title("⚙️ Tùy chọn")
+    
+    # Giữ lại nút xóa cuộc trò chuyện
+    if st.button("🗑️ Xóa cuộc trò chuyện"):
+        if "chat" in st.session_state: del st.session_state.chat
+        if "history" in st.session_state: del st.session_state.history
+        st.rerun()
+
+    st.divider()
+    st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
+
+
 # ==== KHỞI TẠO CHATBOT ====
 def initialize_chat():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
     if "chat" not in st.session_state or "history" not in st.session_state:
-        # Đọc các tệp cấu hình
+        # Quay lại đọc tên model từ file module_gemini.txt
+        model_name = rfile("module_gemini.txt")
         system_instruction = rfile("01.system_trainning.txt")
-        model_name = rfile("module_gemini.txt").strip()
         initial_assistant_message = rfile("02.assistant.txt")
 
-        if not all([system_instruction, model_name, initial_assistant_message]):
-            st.error("Không thể khởi tạo chatbot do thiếu tệp cấu hình.")
+        if not all([model_name, system_instruction, initial_assistant_message]):
+            st.error("Không thể khởi tạo chatbot do thiếu tệp cấu hình (model, system, assistant).")
             st.stop()
 
-        # Khởi tạo mô hình GenerativeAI
         model = genai.GenerativeModel(
-            model_name=model_name,
-            system_instruction=system_instruction
+            model_name=model_name.strip(),
+            system_instruction=system_instruction,
+            safety_settings={
+                HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+                HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+                HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+                HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+            }
         )
         
-        # Bắt đầu phiên chat với tin nhắn chào mừng của trợ lý
         st.session_state.chat = model.start_chat(history=[])
         st.session_state.history = [
             {"role": "model", "parts": [initial_assistant_message]}
@@ -84,10 +102,7 @@ def initialize_chat():
 
 initialize_chat()
 
-
 # ==== GIAO DIỆN NGƯỜI DÙNG ====
-
-# --- Hiển thị logo và tiêu đề ---
 try:
     col1, col2, col3 = st.columns([3, 2, 3])
     with col2:
@@ -102,62 +117,28 @@ if title_content:
         unsafe_allow_html=True
     )
 
-# --- CSS để tùy chỉnh giao diện chat ---
-st.markdown(
-    """
-    <style>
-        .stChat .st-emotion-cache-1c7y2kd {
-            flex-direction: column-reverse;
-        }
-        .stChatMessage[data-testid="stChatMessage"] {
-            border-radius: 15px;
-            padding: 12px;
-            margin-bottom: 10px;
-            max-width: 80%;
-        }
-        .stChatMessage[data-testid="stChatMessage"]:has-text("Bạn:") {
-            background-color: #e1f5fe; /* Màu xanh nhạt cho người dùng */
-            margin-left: auto;
-        }
-        .stChatMessage[data-testid="stChatMessage"]:has-text("Trợ lý:") {
-            background-color: #f1f8e9; /* Màu xanh lá nhạt cho trợ lý */
-            margin-right: auto;
-        }
-        .stChatMessage p {
-            margin: 0;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # --- Hiển thị lịch sử chat ---
 for message in st.session_state.history:
-    role = "Bạn" if message["role"] == "user" else "Trợ lý"
-    with st.chat_message("assistant" if role == "Trợ lý" else "user"):
-         st.markdown(f"**{role}:** {message['parts'][0]}")
+    role = "assistant" if message["role"] == "model" else "user"
+    with st.chat_message(role):
+        st.markdown(message['parts'][0])
 
 # --- Ô nhập liệu và xử lý chat ---
 if prompt := st.chat_input("Bạn cần tư vấn gì?"):
-    # Hiển thị tin nhắn của người dùng ngay lập tức
     st.session_state.history.append({"role": "user", "parts": [prompt]})
     with st.chat_message("user"):
-        st.markdown(f"**Bạn:** {prompt}")
+        st.markdown(prompt)
 
-    # Gửi tin nhắn đến Gemini và nhận phản hồi
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
                 response = st.session_state.chat.send_message(prompt, stream=True)
                 
-                # Hiển thị phản hồi theo từng phần (streaming)
                 def stream_handler():
                     for chunk in response:
                         yield chunk.text
                 
                 full_response = st.write_stream(stream_handler)
-
-                # Lưu phản hồi hoàn chỉnh vào lịch sử
                 st.session_state.history.append({"role": "model", "parts": [full_response]})
 
             except Exception as e:
