@@ -2,7 +2,6 @@ import streamlit as st
 import google.generativeai as genai
 import os
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
-from streamlit_extras.st_copy_to_clipboard import st_copy_to_clipboard # --- BỔ SUNG 1: Thêm thư viện copy
 
 # ==== CẤU HÌNH BAN ĐẦU ====
 
@@ -117,21 +116,19 @@ if title_content:
     )
 
 # --- Hiển thị lịch sử chat ---
-# --- BỔ SUNG 2: Chỉnh sửa vòng lặp để thêm nút copy ---
-for i, message in enumerate(st.session_state.history): # Dùng enumerate để có key duy nhất
+for message in st.session_state.history:
     role = "assistant" if message["role"] == "model" else "user"
     with st.chat_message(role):
-        message_content = message['parts'][0]
-        st.markdown(message_content)
-        # Nếu tin nhắn là của AI, thêm nút copy
-        if message["role"] == "model":
-            st_copy_to_clipboard(message_content, key=f"copy_{i}")
+        st.markdown(message['parts'][0])
 
 # --- Ô nhập liệu và xử lý chat ---
 if prompt := st.chat_input("Bạn cần tư vấn gì?"):
+    # Thêm tin nhắn của người dùng vào lịch sử và hiển thị ngay
     st.session_state.history.append({"role": "user", "parts": [prompt]})
-    # Không cần hiển thị lại tin nhắn người dùng ở đây vì vòng lặp ở trên sẽ làm điều đó
-    
+    with st.chat_message("user"):
+        st.markdown(prompt)
+
+    # Xử lý và hiển thị tin nhắn của AI
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
@@ -142,9 +139,8 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
                         yield chunk.text
                 
                 full_response = st.write_stream(stream_handler)
+                # Thêm tin nhắn hoàn chỉnh của AI vào lịch sử
                 st.session_state.history.append({"role": "model", "parts": [full_response]})
-                # Sau khi có full_response, rerun để vòng lặp hiển thị chính vẽ lại message và nút copy
-                st.rerun()
 
             except Exception as e:
                 st.error(f"Đã xảy ra lỗi khi gọi API của Gemini: {e}")
