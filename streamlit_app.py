@@ -29,47 +29,6 @@ except Exception as e:
     st.error(f"Lỗi khi cấu hình Gemini: {e}")
     st.stop()
 
-# ==== KIỂM TRA MẬT KHẨU (PHIÊN BẢN CẬP NHẬT) ====
-def check_password():
-    """
-    Hiển thị màn hình đăng nhập và kiểm tra mật khẩu từ file.
-    Nếu file password.txt trống, tự động bỏ qua đăng nhập.
-    """
-    # Nếu đã đăng nhập rồi thì không cần làm gì thêm
-    if st.session_state.get("authenticated", False):
-        return
-
-    password_from_file = rfile("password.txt")
-    # Nếu không đọc được file, hàm rfile đã báo lỗi, ta chỉ cần dừng app
-    if password_from_file is None:
-        st.stop()
-        
-    # Lấy mật khẩu đã cấu hình (loại bỏ khoảng trắng thừa)
-    password_configured = password_from_file.strip()
-
-    # TRƯỜNG HỢP 1: FILE TRỐNG -> TỰ ĐỘNG ĐĂNG NHẬP
-    if not password_configured:
-        st.session_state["authenticated"] = True
-        return # Bỏ qua phần còn lại của hàm và tiếp tục chạy app
-
-    # TRƯỜNG HỢP 2: FILE CÓ MẬT KHẨU -> HIỂN THỊ FORM ĐĂNG NHẬP
-    st.title("🔒 Đăng nhập")
-    st.write("Vui lòng nhập mật khẩu để truy cập ứng dụng.")
-    password_input = st.text_input("Mật khẩu:", type="password")
-    
-    if st.button("Đăng nhập"):
-        if password_input == password_configured:
-            st.session_state["authenticated"] = True
-            st.rerun()
-        else:
-            st.error("Sai mật khẩu, vui lòng thử lại.")
-    
-    # Dừng ứng dụng cho đến khi người dùng đăng nhập thành công
-    st.stop()
-
-check_password()
-
-
 # --- GIAO DIỆN THANH BÊN (SIDEBAR) ---
 with st.sidebar:
     st.title("⚙️ Tùy chọn")
