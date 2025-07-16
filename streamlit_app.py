@@ -29,7 +29,7 @@ except Exception as e:
     st.error(f"Lỗi khi cấu hình Gemini: {e}")
     st.stop()
 
-# ==== KIỂM TRA MẬT KHẨU (PHIÊN BẢN GỐC) ====
+# ==== KIỂM TRA MẬT KHẨU ====
 def check_password():
     """Hiển thị màn hình đăng nhập và kiểm tra mật khẩu từ file."""
     PASSWORD = rfile("password.txt")
@@ -70,17 +70,25 @@ with st.sidebar:
     st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
 
-# ==== KHỞI TẠO CHATBOT ====
+# ==== KHỞI TẠO CHATBOT (PHIÊN BẢN TÁCH FILE) ====
 def initialize_chat():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
     if "chat" not in st.session_state or "history" not in st.session_state:
         model_name = rfile("module_gemini.txt")
-        system_instruction = rfile("01.system_trainning.txt")
         initial_assistant_message = rfile("02.assistant.txt")
 
-        if not all([model_name, system_instruction, initial_assistant_message]):
-            st.error("Không thể khởi tạo chatbot do thiếu tệp cấu hình (model, system, assistant).")
+        # --- ĐỌC DỮ LIỆU TỪ 2 FILE RIÊNG BIỆT ---
+        role_instructions = rfile("01.system_trainning.txt")
+        product_data = rfile("san_pham_va_dich_vu.txt")
+
+        # Kiểm tra xem các file có được đọc thành công không
+        if not all([model_name, role_instructions, product_data, initial_assistant_message]):
+            st.error("Không thể khởi tạo chatbot do thiếu một trong các tệp cấu hình.")
             st.stop()
+
+        # Ghép nội dung từ hai file lại với nhau
+        system_instruction = f"{role_instructions}\n\n---\n\n{product_data}"
+        # ----------------------------------------
 
         model = genai.GenerativeModel(
             model_name=model_name.strip(),
