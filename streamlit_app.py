@@ -2,6 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import os
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
+from streamlit_extras.st_copy_to_clipboard import st_copy_to_clipboard # --- BỔ SUNG 1: Thêm thư viện copy
 
 # ==== CẤU HÌNH BAN ĐẦU ====
 
@@ -61,7 +62,6 @@ check_password()
 with st.sidebar:
     st.title("⚙️ Tùy chọn")
     
-    # Giữ lại nút xóa cuộc trò chuyện
     if st.button("🗑️ Xóa cuộc trò chuyện"):
         if "chat" in st.session_state: del st.session_state.chat
         if "history" in st.session_state: del st.session_state.history
@@ -75,7 +75,6 @@ with st.sidebar:
 def initialize_chat():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
     if "chat" not in st.session_state or "history" not in st.session_state:
-        # Quay lại đọc tên model từ file module_gemini.txt
         model_name = rfile("module_gemini.txt")
         system_instruction = rfile("01.system_trainning.txt")
         initial_assistant_message = rfile("02.assistant.txt")
@@ -118,17 +117,21 @@ if title_content:
     )
 
 # --- Hiển thị lịch sử chat ---
-for message in st.session_state.history:
+# --- BỔ SUNG 2: Chỉnh sửa vòng lặp để thêm nút copy ---
+for i, message in enumerate(st.session_state.history): # Dùng enumerate để có key duy nhất
     role = "assistant" if message["role"] == "model" else "user"
     with st.chat_message(role):
-        st.markdown(message['parts'][0])
+        message_content = message['parts'][0]
+        st.markdown(message_content)
+        # Nếu tin nhắn là của AI, thêm nút copy
+        if message["role"] == "model":
+            st_copy_to_clipboard(message_content, key=f"copy_{i}")
 
 # --- Ô nhập liệu và xử lý chat ---
 if prompt := st.chat_input("Bạn cần tư vấn gì?"):
     st.session_state.history.append({"role": "user", "parts": [prompt]})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
+    # Không cần hiển thị lại tin nhắn người dùng ở đây vì vòng lặp ở trên sẽ làm điều đó
+    
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
@@ -140,6 +143,8 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
                 
                 full_response = st.write_stream(stream_handler)
                 st.session_state.history.append({"role": "model", "parts": [full_response]})
+                # Sau khi có full_response, rerun để vòng lặp hiển thị chính vẽ lại message và nút copy
+                st.rerun()
 
             except Exception as e:
                 st.error(f"Đã xảy ra lỗi khi gọi API của Gemini: {e}")
