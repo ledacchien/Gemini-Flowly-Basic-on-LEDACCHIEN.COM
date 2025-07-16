@@ -1,1 +1,1 @@
-gemini-2.5-fladđsh-Lite
+gemini-2.5-flash-Lite
