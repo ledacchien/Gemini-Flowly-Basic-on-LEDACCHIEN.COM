@@ -4,9 +4,6 @@ import os
 
 # ==== CẤU HÌNH BAN ĐẦU ====
 
-# --- Mật khẩu bảo vệ ứng dụng ---
-PASSWORD = "ledacchien2024"  # Bạn có thể đổi mật khẩu này
-
 # --- Hàm đọc file ---
 def rfile(name_file):
     """Hàm đọc nội dung từ file văn bản một cách an toàn."""
@@ -34,16 +31,24 @@ except Exception as e:
 
 # ==== KIỂM TRA MẬT KHẨU ====
 def check_password():
-    """Hiển thị màn hình đăng nhập và kiểm tra mật khẩu."""
+    """Hiển thị màn hình đăng nhập và kiểm tra mật khẩu từ file."""
+    # Đọc mật khẩu từ tệp password.txt
+    PASSWORD = rfile("password.txt")
+    if PASSWORD:
+        PASSWORD = PASSWORD.strip() # Loại bỏ khoảng trắng thừa
+    else:
+        st.error("Lỗi: Không tìm thấy hoặc không đọc được tệp 'password.txt'.")
+        st.stop()
+
     if "authenticated" not in st.session_state:
         st.session_state["authenticated"] = False
     
     if not st.session_state["authenticated"]:
         st.title("🔒 Đăng nhập")
         st.write("Vui lòng nhập mật khẩu để truy cập ứng dụng.")
-        password = st.text_input("Mật khẩu:", type="password")
+        password_input = st.text_input("Mật khẩu:", type="password")
         if st.button("Đăng nhập"):
-            if password == PASSWORD:
+            if password_input == PASSWORD:
                 st.session_state["authenticated"] = True
                 st.rerun() # Chạy lại app sau khi đăng nhập thành công
             else:
@@ -157,4 +162,3 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
 
             except Exception as e:
                 st.error(f"Đã xảy ra lỗi khi gọi API của Gemini: {e}")
-
