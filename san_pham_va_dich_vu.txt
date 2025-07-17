@@ -1,65 +1,244 @@
-# DANH MỤC SẢN PHẨM VÀ DỊCH VỤ
+Chắc chắn rồi, đây là cấu trúc Markdown được định dạng lại theo đúng yêu cầu của bạn, chỉ sử dụng thẻ heading (`#`, `##`, `###`) và cấu trúc "Key: Value", không dùng gạch đầu dòng hay dấu hoa thị.
 
-## Khóa học trực tuyến
+```markdown
+# Kế Hoạch Kinh Doanh & Vận Hành Toàn Diện – ledacchien.com
 
-### Khóa học Thiết kế Kiến trúc và Nội thất AutoCAD SketchUp Enscape
-Giá 2.190.000 VNĐ
-Đối tượng sinh viên kiến trúc kỹ sư nhà thiết kế nội thất cá nhân doanh nghiệp nhỏ cần học bài bản về thiết kế, dựng hình 3D, trình bày dự án
-Nội dung học gồm làm chủ AutoCAD 2D, vẽ kỹ thuật, sử dụng block, thư viện DWG, dựng hình SketchUp, thư viện model, kết xuất Enscape ảnh video, hướng dẫn trình bày bằng CapCut Canva
-Tài nguyên tặng kèm gồm bộ thư viện 2D 3D, nội thất vật liệu cây cối con người, file mẫu bài tập cho từng module
-Phương pháp học video tự học linh hoạt, Zoom hàng tuần giải đáp bài tập dự án thực tế, mô hình blended learning 70% video 30% Zoom
-Quyền lợi truy cập vĩnh viễn, cập nhật tài liệu trọn đời, quyền truy cập Zoom nhóm và tài nguyên nâng cao phải gia hạn 20% học phí mỗi năm từ năm 2
-Link https://ledacchien.com/khoa-hoc-thiet-ke-kien-truc-noi-that-autocad-sketchup-enscape
+# 1. TỔNG QUAN CHIẾN LƯỢC
 
-### Khóa học Sản xuất Video và Thiết kế Đồ họa CapCut Canva
-Giá 950.000 VNĐ
-Đối tượng cá nhân chủ shop marketer content creator hoặc ai muốn tự tay làm video thiết kế ảnh chất lượng cao mà không cần nền tảng chuyên môn
-Nội dung CapCut chỉnh sửa video marketing, hiệu ứng, dựng video quảng cáo ngắn, Canva thiết kế poster banner slide infographic, sử dụng thư viện âm thanh hiệu ứng green screen video stock
-Tài nguyên tặng gồm âm thanh bản quyền, hiệu ứng, video stock, file mẫu, video phông xanh
-Phương pháp học video bài bản chi tiết từng bước, Zoom hàng tuần hỏi đáp thực tế, nhóm Zalo hỗ trợ trực tiếp
-Quyền lợi truy cập vĩnh viễn, gia hạn Zoom và tài nguyên cập nhật 20% học phí mỗi năm từ năm 2
-Link https://ledacchien.com/khoa-hoc-capcut-canva-noi-dung-sang-tao
+## 1.1. Giới Thiệu Nền Tảng: ledacchien.com
+Định vị: ledacchien.com được định vị là một nền tảng giáo dục trực tuyến, tập trung vào việc cung cấp các lộ trình đào tạo kỹ năng số và triển khai công nghệ AI.
+Mục tiêu chính: Giúp cá nhân và doanh nghiệp đạt được hiệu quả tối ưu thông qua các khóa học có tính ứng dụng cao và dịch vụ triển khai công nghệ chuyên biệt.
+Đối tượng mục tiêu: Nền tảng này đặc biệt hướng đến đối tượng là người mới bắt đầu, cá nhân kinh doanh và doanh nghiệp nhỏ, những người mong muốn tiếp cận công nghệ với chi phí hợp lý.
+Triết lý: Chúng tôi xem mỗi khóa học là một điểm khởi đầu khai phá tiềm năng công nghệ, nơi học viên có thể mở khóa hành trình học tập và nghiên cứu để phát triển và khai thác tối ưu các công cụ.
+Cam kết đồng hành: ledacchien.com cam kết đồng hành cùng học viên và khách hàng trên hành trình này, với sự nhấn mạnh rằng học viên cần chăm chỉ và kỷ luật để đạt được kết quả tốt nhất.
+Cam kết trải nghiệm: Chúng tôi cam kết mang đến trải nghiệm học tập lấy người học làm trung tâm, tập trung vào sự chủ động và phù hợp với mục tiêu cá nhân, đảm bảo học viên không chỉ tiếp thu kiến thức mà còn có thể áp dụng ngay lập tức vào công việc.
 
-### Khóa học Lập trình No Code Low Code và phát triển AI Agent
-Giá 1.450.000 VNĐ
-Đối tượng cá nhân chưa biết lập trình, chủ doanh nghiệp vừa nhỏ, freelancer muốn tự động hóa công việc bằng AI Agent, chatbot, tự xây dựng giải pháp AI ứng dụng thực tế
-Nội dung tập trung tư duy và thực hành No Code Low Code, sử dụng Python cơ bản, triển khai AI Agent với Streamlit, Heroku, GitHub, n8n, khai thác OpenAI Google Gemini, dạy cách lấy mã nguồn và tự chỉnh sửa huấn luyện AI
-Phương pháp học qua dự án thực tiễn, hướng dẫn lấy và chạy mã nguồn thực tế, kết hợp video tự học và Zoom tương tác, nhóm Zalo hỗ trợ liên tục
-Quyền lợi truy cập vĩnh viễn, tài nguyên cập nhật liên tục, được hỗ trợ sửa lỗi khi thực hành
-Link https://ledacchien.com/lap-trinh-ai-khoi-dau-hoan-hao-voi-khoa-hoc-tu-tao-tro-ly-ai-bang-bo-cong-cu-va-tai-nguyen-san-co
+## 1.2. Tuyên Bố Định Vị Thương Hiệu
+Tuyên bố: "ledacchien.com là nền tảng giáo dục và công nghệ, giúp cá nhân và doanh nghiệp nhỏ không chỉ học để làm chủ các công cụ số, mà còn lựa chọn giải pháp AI phù hợp nhất – từ tự tay xây dựng đến dịch vụ vận hành trọn gói – để tối ưu hiệu quả kinh doanh trong kỷ nguyên số."
 
-### Khóa học khai thác nền tảng Smax.ai
-Giá 1.490.000 VNĐ
-Đối tượng chủ doanh nghiệp marketer chuyên viên CSKH muốn tự động hóa quy trình kinh doanh, chăm sóc khách hàng đa kênh, xây dựng chatbot hybrid thông minh không cần lập trình
-Nội dung xây dựng chatbot tự động hóa, chatbot AI, hybrid trên Smax.ai, hướng dẫn tích hợp đa kênh website Zalo Messenger Instagram, cập nhật theo tính năng Smax.ai mới nhất
-Tài nguyên video hướng dẫn, giáo trình thực hành, cộng đồng hỗ trợ kín
-Phương pháp học video ghi sẵn, Zoom nhóm coaching 1-1, miễn phí vào nhóm cộng đồng nội bộ để học hỏi và cập nhật
-Quyền lợi truy cập vĩnh viễn, được vào cộng đồng kín hỗ trợ trọn đời
-Link https://ledacchien.com/tu-tay-thiet-lap-va-dao-tao-ai-agent-trong-30-phut-voi-smaxai
+## 1.3. Mô Hình Kinh Doanh: Lộ Trình Năng Lực Số 3 Giai Đoạn
+Mô tả: Chúng tôi không chỉ bán khóa học hay dịch vụ riêng lẻ. Chúng tôi cung cấp một Lộ trình Phát triển Năng lực số toàn diện, dẫn dắt khách hàng qua ba giai đoạn chiến lược, tạo thành một hệ sinh thái tự nuôi dưỡng và phát triển.
+Giai đoạn 1: Giáo dục (Education) - Cửa ngõ tiếp cận.
+Mục tiêu Giai đoạn 1: Thu hút khách hàng mới thông qua các khóa học kỹ năng nền tảng, giải quyết nhu cầu cấp thiết (thiết kế, video).
+Kết quả Giai đoạn 1: Xây dựng niềm tin ban đầu, giúp học viên làm quen với chất lượng giảng dạy và mô hình hỗ trợ của nền tảng.
+Giai đoạn 2: Trao quyền (Empowerment) - Khai phá tiềm năng.
+Mục tiêu Giai đoạn 2: Chuyển đổi học viên từ người tiêu dùng kiến thức thành người tạo ra giải pháp công nghệ.
+Kết quả Giai đoạn 2: Củng cố vị thế chuyên gia của ledacchien.com, khơi dậy nhận thức sâu sắc về tiềm năng của AI và tạo ra những "chiến thắng nhanh" (quick wins) cho học viên.
+Giai đoạn 3: Dịch vụ (Service) - Tối ưu hóa hiệu suất.
+Mục tiêu Giai đoạn 3: Cung cấp giải pháp chuyên nghiệp cho những khách hàng đã nhận thấy giá trị của AI nhưng thiếu thời gian hoặc nguồn lực để tự vận hành.
+Kết quả Giai đoạn 3: Tạo ra nguồn doanh thu bền vững, giải quyết triệt để bài toán của doanh nghiệp và khẳng định vai trò đối tác chiến lược.
 
-## Dịch vụ phễu và triển khai AI Agent
+# 2. DANH MỤC SẢN PHẨM & DỊCH VỤ
+Cam kết: ledacchien.com cam kết cung cấp các giải pháp toàn diện bao gồm đào tạo kỹ năng số và triển khai công nghệ AI, nhằm giúp cá nhân và doanh nghiệp đạt được hiệu quả tối ưu trong thời đại số.
 
-### Gói nền tảng AI Agent Smax
-Giá 1.190.000 VNĐ cho 3 tháng triển khai và hỗ trợ
-Dành cho khách đã có website hoặc fanpage muốn tích hợp AI Agent nhanh, giảm tải công việc thủ công, không cần biết lập trình
-Quy trình ledacchien.com trực tiếp quản lý, vận hành tối ưu AI 3 tháng, bàn giao toàn bộ tài khoản, mã nhúng, file huấn luyện txt cho khách hàng
-Khuyến nghị nên tạo fanpage, Zalo OA riêng phục vụ công việc để tách biệt hoạt động kinh doanh
-Sau 3 tháng khách có thể tự vận hành hoặc thuê tiếp hỗ trợ với phí 490.000 VNĐ mỗi tháng tính theo quý
-Link https://ledacchien.com/goi-trien-khai-ai-agent-da-kenh-cho-website-fanpage
+## 2.1. Mảng Đào Tạo: Các Khóa Học Kỹ Năng Số
 
-### Gói toàn diện All-in-One AI Agent Smax
-Giá 1.690.000 VNĐ gồm toàn bộ dịch vụ gói nền tảng cộng thiết kế website landing page hosting 1 năm tên miền con miễn phí, bảo trì kỹ thuật
-Dành cho cá nhân doanh nghiệp chưa có website muốn có bộ giải pháp trọn gói cả chatbot AI và website landing page
-Bàn giao website, chatbot, tài khoản, toàn bộ tài sản số, quyền sở hữu đầy đủ
-Quy trình xác thực thông tin, triển khai nhanh 24h, hỗ trợ huấn luyện sử dụng, tùy chọn bàn giao sớm khi hệ thống đã ổn định
-Link https://ledacchien.com/goi-trien-khai-ai-agent-da-kenh-cho-website-fanpage
+### 2.1.1. Khóa học: Thiết kế Kiến trúc & Nội thất Toàn diện
+Mô tả khóa học: Không chỉ dạy phần mềm, khóa học này là một giải pháp toàn diện giúp bạn tạo ra sản phẩm thuyết trình ấn tượng để chốt hợp đồng và nâng cao giá trị thương hiệu cá nhân. Khóa học chuyên sâu trang bị kiến thức và kỹ năng toàn diện từ cơ bản đến nâng cao, đủ để học viên tự tin thực hiện các dự án bản vẽ trong lĩnh vực thiết kế kiến trúc và nội thất.
+Đối tượng mục tiêu: Sinh viên, kiến trúc sư, kỹ sư, nhà thiết kế nội thất, hoặc bất kỳ cá nhân/doanh nghiệp nào mong muốn học hỏi và nâng cao kỹ năng thiết kế, dựng hình 3D và trình bày chuyên nghiệp để tối ưu hóa công việc.
+Công cụ - AutoCAD: Làm chủ kỹ năng vẽ kỹ thuật 2D chính xác và hiệu quả với các lệnh và thao tác cơ bản nhất.
+Công cụ - SketchUp: Đào tạo dựng hình 3D nhanh chóng, linh hoạt và dễ hiểu.
+Công cụ - Enscape: Hướng dẫn kết xuất (render) hình ảnh và video chất lượng cao, chuyên nghiệp – đây là điểm nhấn giúp học viên tăng hiệu quả kinh doanh và xây dựng thương hiệu cá nhân.
+Công cụ - Ứng dụng bổ trợ: Lồng ghép hướng dẫn sử dụng CapCut và Canva để tối ưu hóa việc biên tập và trình bày sản phẩm video/ảnh thiết kế.
+Tài nguyên - Thư viện: Bộ thư viện model thiết kế 2D, 3D đa dạng (đồ nội thất, cây cối, con người, vật liệu...) tương ứng với từng ứng dụng, giúp tiết kiệm thời gian và nâng cao chất lượng sản phẩm.
+Tài nguyên - File mẫu: Các file mẫu và bài tập thực hành đi kèm theo từng module học.
+Phương pháp học - Video: Học viên chủ động học theo lộ trình được thiết kế sẵn, linh hoạt về thời gian.
+Phương pháp học - Zoom hàng tuần: Các buổi tương tác trực tiếp với giảng viên để giải đáp thắc mắc, nhận phản hồi về bài tập, ôn tập kiến thức và thảo luận chuyên sâu về các dự án thực tế. Đặc biệt, các dự án của học viên sẽ được lấy làm trung tâm của bài học, giúp nội dung trở nên sâu rộng và thực tiễn. Các video Zoom sẽ được lưu trữ, trở thành nguồn tài liệu thực hành hữu ích cho học viên theo thời gian.
+Phương pháp học - Blended Learning: Mô hình (70% video / 30% Zoom) tối ưu hóa trải nghiệm học tập, kết hợp sự linh hoạt của tự học với sự tương tác trực tiếp và chuyên sâu.
+Lợi ích - Thành thạo công cụ: Thành thạo các công cụ thiết kế chuẩn công nghiệp (AutoCAD, SketchUp, Enscape).
+Lợi ích - Nâng cao khả năng diễn họa: Nâng cao khả năng diễn họa ý tưởng kiến trúc và nội thất một cách trực quan, sinh động thông qua ảnh và video chất lượng cao.
+Lợi ích - Tiết kiệm thời gian: Tiết kiệm thời gian với các thư viện tài nguyên sẵn có.
+Lợi ích - Hỗ trợ liên tục: Nhận được sự hỗ trợ liên tục từ Team Hỗ Trợ và cộng đồng học viên.
+Sản phẩm đầu ra 1: Bản vẽ kỹ thuật 2D hoàn chỉnh.
+Sản phẩm đầu ra 2: Mô hình 3D kiến trúc/nội thất.
+Sản phẩm đầu ra 3: Ảnh render chất lượng cao.
+Sản phẩm đầu ra 4: Video diễn họa không gian, nội thất.
+Giá khóa học: 2.680.000 VNĐ.
+Chính sách: Truy cập tài nguyên trọn đời, hỗ trợ Zoom hàng tuần & cập nhật tài nguyên (liên hệ Support để gia hạn khóa học miễn phí).
 
-## Ưu đãi của nền tảng triển khai AI Agent, nhấn mạnh khóa học tận dụng để thử nghiệm và ứng dụng thực tế đối với khách hàng
-Không được nhận đây là ưu đãi của ledacchien.com, chương trình này là ưu đãi của bên Smax
+### 2.1.2. Khóa học: Xưởng Thực hành Sáng tạo Nội dung (CapCut & Canva)
+Mô tả khóa học: Đây là một "xưởng thực hành" chứ không phải một khóa học lý thuyết. Nơi các chủ shop online, marketer được cầm tay chỉ việc để tạo ra nội dung bán hàng hiệu quả ngay lập tức, giúp tự tạo ra nội dung hấp dẫn và chuyên nghiệp cho các mục đích cá nhân và kinh doanh.
+Đối tượng mục tiêu: Cá nhân, chủ shop online, marketer, content creator, hoặc bất kỳ ai muốn tự tay tạo video và thiết kế đồ họa chất lượng cao một cách nhanh chóng, hiệu quả mà không cần kiến thức chuyên sâu.
+Công cụ chính - CapCut: Nền tảng chỉnh sửa video mạnh mẽ trên di động và máy tính, tối ưu cho việc tạo video ngắn, video marketing, vlog.
+Công cụ chính - Canva: Công cụ thiết kế đồ họa trực tuyến đa năng, dễ sử dụng, phù hợp cho việc tạo poster, banner, infographic, slide thuyết trình, và hình ảnh cho mạng xã hội.
+Tài nguyên - Âm thanh và hiệu ứng: Bộ thư viện âm thanh bản quyền và hiệu ứng đa dạng.
+Tài nguyên - Video stock: Bộ thư viện video stock chất lượng cao.
+Tài nguyên - Phông xanh: Các video hiệu ứng phông xanh (Green Screen) tạo sẵn hoặc sưu tầm, giúp học viên dễ dàng tạo ra các video sáng tạo và chuyên nghiệp mà không cần quay dựng phức tạp.
+Phương pháp học - Video: Cung cấp kiến thức nền tảng và hướng dẫn chi tiết theo từng bước, giúp học viên tự học linh hoạt.
+Phương pháp học - Zoom hàng tuần: Các buổi tương tác trực tiếp để học viên nhận phản hồi và được "chữa bài" trực tiếp trên sản phẩm của mình, đặt câu hỏi, và giải quyết các vấn đề thực tế trong quá trình làm dự án.
+Phương pháp học - Blended Learning: Mô hình (70% video / 30% Zoom) đảm bảo sự cân bằng giữa tự học linh hoạt và tương tác chuyên sâu.
+Lợi ích - Tự sản xuất nội dung: Tự tin sản xuất video và thiết kế đồ họa chuyên nghiệp chỉ với các công cụ phổ biến.
+Lợi ích - Nâng cao khả năng sáng tạo: Nâng cao khả năng tạo nội dung hấp dẫn cho marketing, truyền thông cá nhân/doanh nghiệp.
+Lợi ích - Tiết kiệm chi phí: Tiết kiệm chi phí thuê ngoài thiết kế và chỉnh sửa video.
+Lợi ích - Sở hữu tài nguyên: Sở hữu các thư viện tài nguyên độc quyền giúp tăng tốc quá trình sáng tạo.
+Lợi ích - Tương tác trực tiếp: Tương tác trực tiếp với giảng viên để giải quyết mọi vướng mắc.
+Sản phẩm đầu ra 1: Video quảng cáo sản phẩm/dịch vụ.
+Sản phẩm đầu ra 2: Video ngắn cho TikTok, Reels, Shorts.
+Sản phẩm đầu ra 3: Thiết kế bài đăng mạng xã hội, banner, infographic.
+Sản phẩm đầu ra 4: Video giới thiệu doanh nghiệp/cá nhân.
+Giá khóa học: 950.000 VNĐ.
+Chính sách: Truy cập tài nguyên trọn đời, hỗ trợ Zoom hàng tuần & cập nhật tài nguyên (liên hệ Support để gia hạn khóa học miễn phí).
 
-###Tận dụng 3 tháng dùng thử Smax.ai:
-tích hợp đa kênh tối đa 5 kênh website Messenger Zalo Instagram
-Quản lý đội nhóm tối đa 5 thành viên
-Lưu trữ 15000 khách hàng
-Công cụ marketing chủ động 10000 SendCards
-Hỗ trợ kỹ thuật triển khai và huấn luyện AI miễn phí 3 tháng
+### 2.1.3. Khóa học: Tạo AI Agent Siêu Tốc: 15 Phút Thành Thạo
+Mô tả khóa học: Tin vui cho bạn đây! Chúng tôi đã "đóng gói" thành công công nghệ AI phức tạp thành một sản phẩm đơn giản, trực quan và sẵn sàng chuyển giao cho bạn. Khóa học này sẽ biến điều không thể thành có thể: tự tay xây dựng một Website AI Agent của riêng bạn với chi phí thấp không tưởng. (Ghi chú: Đây không phải website thông thường chỉ để hiển thị thông tin, mà là một website "sống" có thể trò chuyện, tư vấn, báo giá và làm việc cho bạn như một nhân viên thực thụ).
+Giá trị đặc biệt: Bạn sẽ phải ngạc nhiên với sản phẩm mình nhận được, một giá trị chưa từng có mà chỉ có thể xuất hiện trong cuộc cách mạng AI này.
+Phương pháp hướng dẫn: Chúng tôi sẽ hướng dẫn bạn bằng ngôn ngữ Tiếng Việt tự nhiên, không phải thuật ngữ lập trình khô khan, để bạn sở hữu ngay một AI Agent cá nhân hóa – trợ lý ảo của riêng bạn, được huấn luyện bằng kiến thức của bạn, không phải một công cụ công cộng như ChatGPT.
+Yêu cầu: Không cần biết lập trình – Không giới hạn số lượng – Chi phí duy nhất là học phí.
+Đối tượng mục tiêu 1: Người mới bắt đầu, chưa từng biết lập trình, muốn tự tay làm chủ công nghệ AI một cách dễ dàng nhất.
+Đối tượng mục tiêu 2: Chủ shop, doanh nghiệp nhỏ, freelancer, marketer: Muốn có một "nhân viên số" làm việc 24/7 để bán hàng và chăm sóc khách hàng mà không tốn chi phí vận hành.
+Đối tượng mục tiêu 3: Giáo viên, sinh viên: Muốn tạo trợ lý học tập cá nhân, giúp tóm tắt tài liệu và giải đáp thắc mắc.
+Đối tượng mục tiêu 4: Bất kỳ ai muốn biến ý tưởng kinh doanh thành sản phẩm thật một cách nhanh chóng.
+Nội dung - App mẫu: Bạn được cấp quyền truy cập vào 4 bộ ứng dụng đã được lập trình sẵn. (Ghi chú: "Kho mã nguồn" giống như một ngôi nhà đã xây xong phần thô. Bạn không cần quan tâm đến gạch vữa, xi măng mà chỉ việc vào "trang trí" nội thất và sử dụng ngay).
+App mẫu loại 1 & 2: AI Chatbot Cơ bản (Công khai / Có mật khẩu): Một trợ lý ảo trò chuyện tinh gọn.
+App mẫu loại 3 & 4: Website Tích Hợp AI (Công khai / Có mật khẩu): Một trang web hoàn chỉnh, có cả AI Chatbot và các khu vực để bạn giới thiệu sản phẩm, dịch vụ.
+Giải thích tính năng Mật khẩu: Đây là tính năng cực kỳ giá trị để bạn tạo ra các công cụ dùng riêng cho nội bộ hoặc cung cấp cho nhóm khách hàng đặc biệt. Bạn có thể huấn luyện AI các thông tin nhạy cảm như: bảng giá sỉ, quy trình báo giá, tài liệu đào tạo nhân viên, bí quyết kinh doanh... mà không sợ bị lộ ra ngoài.
+Nội dung - Bí quyết API: Chúng tôi sẽ hé lộ cách lấy API key – chiếc chìa khóa quyền năng – để bạn sử dụng trí tuệ của các mô hình AI hàng đầu thế giới hoàn toàn miễn phí. (Ghi chú: "API Key" là gì? Hãy tưởng tượng nó là một chiếc thẻ khóa cho phép ứng dụng của bạn "mở cửa" và sử dụng sức mạnh của một "bộ não AI" khổng lồ trị giá hàng tỷ đô mà bạn không cần phải tự xây dựng).
+Nội dung - Hướng dẫn tải app: Video hướng dẫn chi tiết cách tải toàn bộ app mẫu bạn chọn về máy tính của mình.
+Nội dung - Xuất bản website: Video bài giảng sẽ chỉ cho bạn cách deploy ứng dụng lên nền tảng Streamlit.io. (Ghi chú: "Deploy" đơn giản là hành động "đưa website" của bạn từ máy tính cá nhân lên mạng Internet, để bất kỳ ai có đường link cũng có thể truy cập, giống như một website chuyên nghiệp).
+Kết quả xuất bản: Bạn sẽ có ngay một website với địa chỉ riêng miễn phí (ví dụ: ten-cua-hang-cua-ban.streamlit.app), hoạt động 24/7 mà không cần trả tiền hosting hàng tháng.
+Lợi ích - Sở hữu đội quân AI: Bạn có toàn quyền tạo ra không giới hạn số lượng AI Agent miễn phí. Mỗi trợ lý ảo đảm nhận một vai trò chuyên biệt, giống như bạn đang có một đội nhân viên làm việc không mệt mỏi.
+Lợi ích - Mở khóa tư duy công nghệ: Dù không dạy code, khóa học giúp bạn hiểu được logic và cách một sản phẩm công nghệ được tạo ra. Đây là một lợi ích quý giá, giúp bạn tự tin hơn rất nhiều trong thế giới số.
+Lợi ích - Xây dựng thói quen tự học: Khóa học sẽ truyền cho bạn động lực và năng lượng để duy trì việc học hỏi, nâng cấp các kỹ năng cốt lõi.
+Lợi ích - Cá nhân hóa 100%: Trợ lý AI được huấn luyện dựa trên dữ liệu CỦA BẠN, mang đến câu trả lời độc nhất và chính xác theo thương hiệu của bạn.
+Lợi ích - Giá trị chưa từng có: Với một khoản học phí siêu rẻ, bạn sở hữu một hệ thống mạnh mẽ mà trước đây chỉ có các doanh nghiệp lớn mới dám mơ tới.
+Gói 1 (Tự Chủ Sáng Tạo): Bạn tự học, tự làm.
+Học phí Gói 1: 490.000 VNĐ.
+Mô tả Gói 1: Đây là gói dành cho những bạn muốn tự mình khám phá và làm chủ công nghệ từ A-Z. Bạn sẽ học qua video và tài liệu, tự tay cài đặt và tùy chỉnh theo hướng dẫn chi tiết.
+Lợi ích cốt lõi Gói 1: Bạn sẽ có được kỹ năng nền tảng để tự do tạo ra không giới hạn số lượng AI Agent cho mọi mục đích. Đây chính là giá trị lớn nhất khi bạn đầu tư vào kiến thức và kỹ năng cho bản thân!
+Gói 2 (Chìa Khóa Trao Tay): Hỗ trợ cài đặt 1-1.
+Chi phí Gói 2: 980.000 VNĐ.
+Mô tả Gói 2: Nếu bạn muốn có ngay một hệ thống chạy tốt mà không cần bận tâm về các bước kỹ thuật ban đầu, gói này là dành cho bạn. Gói bao gồm toàn bộ quyền lợi của Gói 1.
+Hỗ trợ đặc biệt Gói 2: Chúng tôi sẽ kết nối trực tiếp qua UltraViewer để cài đặt và thiết lập sẵn 02 mô hình AI Agent (bạn tùy chọn trong 4 mẫu) trên máy tính của bạn.
+Lợi ích cốt lõi Gói 2: Sau khi cài đặt xong, bạn có thể sử dụng được ngay. Việc của bạn chỉ là xem video hướng dẫn cách soạn thảo file để "huấn luyện" cho AI là có thể vận hành và kinh doanh ngay lập tức.
+Chính sách chung - Hỗ trợ API Key ban đầu: Để đảm bảo bạn có thể bắt đầu ngay lập tức, khi tham gia khóa học, chúng tôi sẽ cung cấp miễn phí API key để bạn sử dụng trong giai đoạn đầu.
+Chính sách chung - Hướng dẫn làm chủ API Key: Song song đó, chúng tôi sẽ hướng dẫn chi tiết cho đến khi bạn hoàn toàn làm chủ kỹ năng tự tạo và quản lý các API key miễn phí cho tất cả các dự án trong tương lai của mình.
+Chính sách chung - Quyền lợi vĩnh viễn: Dù chọn gói nào, bạn cũng được truy cập trọn đời video, tài liệu, được cập nhật kiến thức mới và tham gia cộng đồng hỗ trợ vĩnh viễn.
+
+### 2.1.4. Khóa học: Làm chủ AI Agent: Lập trình AI không cần biết code
+Mô tả khóa học: Đột phá cho người mới bắt đầu: Khóa học giúp bạn tiếp cận lập trình Python – ngôn ngữ phổ biến nhất, nền tảng quan trọng trong lĩnh vực trí tuệ nhân tạo hiện nay.
+Phương pháp No-Code/Low-Code: Bạn không cần biết lập trình vẫn có thể tự tạo, chỉnh sửa, triển khai các ứng dụng AI Agent, sử dụng phương pháp kéo-thả hoặc chỉnh sửa code mẫu có sẵn.
+Trọng tâm: Hướng dẫn bạn xây dựng các Chatbot AI, AI Agent, tự động hóa quy trình bán hàng, CSKH hoặc phục vụ mục đích học tập/nghiên cứu AI.
+Điểm đặc biệt: Mọi tài nguyên, bài giảng, mã nguồn Python đều được hướng dẫn từ A-Z, chi tiết từng bước, giải thích bằng ngôn ngữ đơn giản, thân thiện.
+Học qua dự án: Bạn sẽ không chỉ học lý thuyết, mà được thực hành trên repo mẫu, phát triển dự án thực tế và nhận phản hồi trực tiếp từ giảng viên.
+Đối tượng mục tiêu 1: Người hoàn toàn mới, chưa từng lập trình: Những ai từng sợ code, từng nghĩ rằng lập trình là quá khó.
+Đối tượng mục tiêu 2: Học sinh, sinh viên, người đi làm muốn chuyển ngành: Những ai muốn đổi nghề, nâng cấp kỹ năng để phù hợp với thị trường lao động AI.
+Đối tượng mục tiêu 3: Chủ doanh nghiệp (SMBs), freelancer, cá nhân kinh doanh: Những người cần ứng dụng AI để tự động hóa mà không cần học lập trình truyền thống.
+Đối tượng mục tiêu 4: Bất kỳ ai muốn nhanh chóng xây dựng giải pháp AI thực tiễn: Không cần nền tảng IT, chỉ cần biết sử dụng máy tính cơ bản.
+Công cụ trung tâm: Python.
+Sản phẩm thực tế: Chatbot AI/AI Agent.
+Tài nguyên: Repo mã nguồn trên Github được cấp quyền truy cập kho mã nguồn Python chuẩn để tùy biến, học tập và phát triển.
+Phương pháp học - Learning by Doing: Hướng dẫn cầm tay chỉ việc, thực hành từng thao tác. Có các bài tập thực tế, checklist, dự án nhỏ.
+Phương pháp học - Tận dụng AI: Hướng dẫn sử dụng ChatGPT, Gemini, và các công cụ AI phổ biến để tăng tốc học tập.
+Phương pháp học - Video và Zoom: Kết hợp giữa tự học qua video hướng dẫn chi tiết và tham gia các buổi Q&A/Workshop trực tuyến hàng tuần.
+Lộ trình thực hành Giai đoạn 1: Triển khai AI Agent miễn phí trên nền tảng Streamlit: Được cung cấp repo Python chuẩn, deploy app trực tiếp trên streamlit.io.
+Lộ trình thực hành Giai đoạn 2: Triển khai trên Heroku để cá nhân hóa: Hướng dẫn deploy app lên Heroku, tích hợp tên miền riêng, tùy biến giao diện.
+Lộ trình thực hành Giai đoạn 3: Tham gia cộng đồng, thảo luận và nâng cấp: Hỗ trợ trao đổi ý tưởng, thảo luận kịch bản, mở rộng tính năng, review code, tối ưu giải pháp.
+Lợi ích - Phá bỏ nỗi sợ lập trình: Phá bỏ nỗi sợ lập trình.
+Lợi ích - Sở hữu sản phẩm công nghệ: Chủ động xây dựng và sở hữu sản phẩm công nghệ AI thực thụ.
+Lợi ích - Làm chủ tư duy No-Code/Low-Code: Tiết kiệm chi phí thuê ngoài.
+Lợi ích - Thành thạo công cụ: Thành thạo các công cụ lớn như ChatGPT, Gemini, Python.
+Lợi ích - Mở rộng năng lực: Tăng lợi thế cạnh tranh.
+Lợi ích - Sở hữu kho tài nguyên: Sở hữu kho tài nguyên, mã nguồn, quy trình mẫu thực chiến.
+Học phí trọn gói: 1.250.000 VNĐ (chưa bao gồm các tùy chọn nâng cấp, nếu có).
+Chính sách: Học viên được truy cập tài nguyên trọn đời, cập nhật tài liệu mới, tham gia Zoom hỗ trợ hàng tuần. Hỗ trợ gia hạn khóa học miễn phí từng năm. Mọi chi phí nâng cấp nền tảng đều minh bạch.
+
+### 2.1.5. Khóa học: Trở thành Chuyên gia Smax.ai
+Định vị: Là cầu nối chiến lược giữa đào tạo và dịch vụ cao cấp. Khóa học giúp bạn trở thành chuyên gia Smax.ai, hoặc tìm cho mình một đối tác vận hành tin cậy.
+Mô tả khóa học: Khóa học toàn diện giúp bạn làm chủ nền tảng Smax.ai – một nền tảng mạnh mẽ, khả năng mở rộng linh hoạt từ hộ kinh doanh nhỏ lẻ đến doanh nghiệp quy mô lớn.
+Phạm vi khóa học: Tập trung tối ưu cho cá nhân, hộ kinh doanh và doanh nghiệp nhỏ, giúp bạn dễ dàng tiếp cận và triển khai từng tính năng phù hợp thực tiễn.
+Khả năng mở rộng: Dù bắt đầu với quy mô nhỏ, bạn hoàn toàn có thể mở rộng hệ thống mà không phải “làm lại từ đầu” khi doanh nghiệp phát triển.
+Đối tượng mục tiêu 1: Hộ kinh doanh cá nhân, doanh nghiệp nhỏ và siêu nhỏ.
+Đối tượng mục tiêu 2: Chủ doanh nghiệp, marketer, chuyên viên chăm sóc khách hàng.
+Đối tượng mục tiêu 3: Người mới muốn từng bước làm chủ công nghệ AI và chatbot.
+Nội dung đào tạo 1: Xây dựng Chatbot Automation cho bán hàng & CSKH cơ bản.
+Nội dung đào tạo 2: Xây dựng Chatbot AI thông minh, trả lời tự động nâng cao.
+Nội dung đào tạo 3: Tạo Chatbot Hybrid (kết hợp Automation & AI).
+Nội dung đào tạo 4: Các chủ đề cập nhật liên tục theo cải tiến mới nhất của Smax.ai.
+Phương pháp học - Video: Video hướng dẫn thực chiến từng bước.
+Phương pháp học - Giáo trình: Giáo trình chi tiết & tài liệu thực hành dễ hiểu.
+Phương pháp học - Zoom và Coaching: Zoom nhóm định kỳ và coaching 1-1 cá nhân hóa.
+Phương pháp học - Cộng đồng: Tham gia cộng đồng chia sẻ, hỗ trợ, cập nhật kinh nghiệm thực tế.
+Lợi ích - Làm chủ nền tảng: Tự tin làm chủ nền tảng Smax.ai dù bạn là cá nhân hay doanh nghiệp.
+Lợi ích - Tự động hóa: Tự động hóa quy trình bán hàng, CSKH và marketing.
+Lợi ích - Mở rộng dễ dàng: Không lo bị giới hạn khi doanh nghiệp phát triển.
+Lợi ích - Tiếp cận công nghệ mới: Tiếp cận và ứng dụng nhanh các công nghệ AI mới nhất.
+Lợi ích - Hỗ trợ dài hạn: Hỗ trợ liên tục từ ledacchien.com, đồng hành dài hạn cùng doanh nghiệp.
+Giá khóa học: 1.650.000 VNĐ.
+Chính sách: Học viên được truy cập tài nguyên trọn đời, cập nhật tài liệu mới, tham gia Zoom hỗ trợ hàng tuần. Hỗ trợ gia hạn khóa học miễn phí từng năm. Mọi chi phí nâng cấp nền tảng đều minh bạch.
+
+## 2.2. Mảng Dịch Vụ: Triển Khai AI Trọn Gói trên Nền tảng Smax.ai
+Mô tả: Chúng tôi cung cấp các giải pháp xây dựng và chuyển giao Trợ lý AI chuyên nghiệp trên nền tảng Smax.ai, giúp bạn sở hữu một "nhân viên số" mẫn cán, được đào tạo theo đúng nghiệp vụ của bạn mà không cần bận tâm về kỹ thuật.
+
+### 2.2.1. Gói 1: Tích Hợp & Chuyển Giao Trợ Lý AI Smax
+Mô tả: Đây là gói dịch vụ được thiết kế cho các doanh nghiệp đã có website và muốn trang bị cho mình một tài sản công nghệ mạnh mẽ. Chúng tôi sẽ xây dựng, huấn luyện và bàn giao toàn bộ một Trợ lý AI chuyên nghiệp trên nền tảng Smax.ai, giúp bạn tự động hóa việc tư vấn, trả lời câu hỏi và chăm sóc khách hàng 24/7.
+Chi phí đầu tư: 1.135.000 VNĐ (Thanh toán 1 lần duy nhất để sở hữu vĩnh viễn).
+Bàn giao - Nhân viên AI: Một Trợ lý AI được xây dựng trên nền tảng Smax.ai, được cấu hình và huấn luyện chuyên sâu để hiểu và trả lời các câu hỏi phức tạp theo đúng nghiệp vụ của bạn.
+Bàn giao - Bộ não độc quyền: Toàn bộ dữ liệu bạn cung cấp (thông tin sản phẩm, chính sách, câu hỏi thường gặp) sẽ được cấu trúc hóa thành một "Bộ não AI". Đây là tài sản trí tuệ cốt lõi, hoàn toàn thuộc về bạn sau khi bàn giao.
+Bàn giao - Tích hợp kênh: Chúng tôi sẽ tích hợp đồng bộ Trợ lý AI lên Zalo Official Account, Facebook Messenger và Live Chat trực tiếp trên website hiện có của bạn.
+Bàn giao - Tài khoản quản trị: Bạn sẽ nhận tài khoản quản trị viên cao nhất trên nền tảng Smax.ai, cho phép bạn toàn quyền theo dõi, kiểm soát và chỉnh sửa mọi hoạt động của AI.
+Bàn giao - Đào tạo 1-1: Một buổi đào tạo trực tuyến chuyên sâu (qua Zoom/UltraViewer) để hướng dẫn chi tiết cách sử dụng bảng điều khiển Smax, theo dõi hội thoại và cách tự cập nhật kiến thức cơ bản cho AI.
+Bàn giao - Tài liệu hướng dẫn: Một bộ tài liệu dạng PDF được biên soạn chi tiết, dễ hiểu để bạn và đội ngũ có thể tham khảo bất cứ lúc nào.
+Quy trình Giai đoạn 1: Khởi động & Thiết kế "Chân dung AI": Cùng nhau xác định mục tiêu, tính cách và nhiệm vụ cho Trợ lý AI.
+Quy trình Giai đoạn 2: Xây dựng & Huấn luyện: Chúng tôi tiến hành xây dựng và "dạy" cho AI từ dữ liệu bạn cung cấp.
+Quy trình Giai đoạn 3: "Thử Việc" và Tinh chỉnh: Bạn sẽ trực tiếp kiểm tra và đưa ra góp ý để chúng tôi hoàn thiện AI.
+Quy trình Giai đoạn 4: Đào tạo & Bàn giao: Tổ chức buổi đào tạo và bàn giao toàn bộ tài sản cho bạn.
+Cam kết - Toàn quyền sở hữu 100%: Chúng tôi cam kết bạn sở hữu hoàn toàn tài sản công nghệ của mình, không có bất kỳ ràng buộc nào sau khi bàn giao.
+Cam kết - Hỗ trợ cộng đồng lâu dài: Sau khi dự án kết thúc, bạn vẫn là thành viên của cộng đồng ledacchien.com, được tham gia các nhóm chung và các buổi Zoom hỗ trợ hàng tuần.
+Lợi ích lớn nhất: Bạn được sở hữu và toàn quyền kiểm soát một tài sản công nghệ giá trị, làm việc cho bạn vĩnh viễn chỉ với một lần đầu tư duy nhất.
+
+### 2.2.2. Gói 2: Toàn Diện - Trợ Lý AI Smax & Website Chuyên Nghiệp
+Mô tả: Đây là giải pháp "chìa khóa trao tay" toàn diện nhất, dành cho doanh nghiệp chưa có website hoặc muốn xây dựng một "trụ sở online" hoàn toàn mới. Chúng tôi không chỉ cung cấp một Trợ lý AI Smax mạnh mẽ mà còn xây dựng một website chuyên nghiệp để làm nền tảng cho sự hiện diện số của bạn.
+Chi phí đầu tư: 2.135.000 VNĐ (Thanh toán 1 lần duy nhất để sở hữu vĩnh viễn).
+Bao gồm: TOÀN BỘ các hạng mục chi tiết và cam kết của Gói 1.
+Hạng mục bổ sung - Thiết kế & Xây dựng Website: Chúng tôi sẽ xây dựng và bàn giao một website hoàn chỉnh dạng Landing Page bán hàng hoặc trang giới thiệu năng lực công ty (Portfolio). Website được thiết kế với giao diện hiện đại, chuyên nghiệp, tương thích với mọi thiết bị.
+Hạng mục bổ sung - Tích hợp sẵn AI Smax: Trợ lý AI được tích hợp liền mạch và tối ưu hóa để sẵn sàng hoạt động ngay trên website mới của bạn, tạo ra trải nghiệm ấn tượng cho khách truy cập.
+Hạng mục bổ sung - Miễn phí 01 năm vận hành Website: Gói dịch vụ đã bao gồm chi phí lưu trữ (hosting) chất lượng cao và một tên miền phụ (subdomain) dạng tenban.smax.ai hoặc tương tự trong năm đầu tiên.
+Hạng mục bổ sung - Bàn giao toàn quyền quản trị Website: Bạn sẽ nhận toàn bộ quyền quản trị hosting và website, cho phép bạn toàn quyền kiểm soát, tùy chỉnh và phát triển trong tương lai.
+Quy trình triển khai: Tương tự Gói 1, quy trình được thực hiện song song cho cả việc xây dựng Trợ lý AI và thiết kế website, đảm bảo sự đồng bộ và hiệu quả.
+Cam kết: Tất cả các cam kết về Toàn Quyền Sở Hữu 100% và Hỗ Trợ Cộng Đồng Lâu Dài từ Gói 1 đều được áp dụng cho gói này.
+Lợi ích lớn nhất: Bạn có ngay một hệ sinh thái kinh doanh online hoàn chỉnh, từ một website chuyên nghiệp để thu hút khách hàng đến một Trợ lý AI thông minh để chăm sóc và chuyển đổi khách hàng, tất cả trong một lần triển khai duy nhất.
+
+### 2.2.3. Gói 3: Dịch Vụ Vận Hành & Tối Ưu AI Smax Hàng Tháng ("Gói An Nhàn")
+Mô tả: Đây là giải pháp vận hành trọn gói, được thiết kế cho các chủ doanh nghiệp không có thời gian hoặc không muốn bận tâm đến các vấn đề kỹ thuật sau khi đã sở hữu Trợ lý AI (từ Gói 1 hoặc Gói 2). Với gói dịch vụ này, chúng tôi sẽ hoạt động như một đội ngũ kỹ thuật chuyên trách, thay mặt bạn quản lý và phát triển "nhân viên số" của mình.
+Điểm cốt lõi: Tài khoản Smax của bạn sẽ được chúng tôi trực tiếp quản lý trên máy chủ chuyên dụng, đảm bảo sự ổn định, bảo mật và hiệu suất cao nhất. Bạn hoàn toàn rảnh tay để tập trung vào các hoạt động kinh doanh chính.
+Chi phí dịch vụ: 695.000 VNĐ / tháng.
+Hạng mục - Quản lý & Vận hành toàn diện: Chúng tôi đảm nhiệm 100% các thao tác kỹ thuật, từ cấu hình, bảo trì đến các hoạt động huấn luyện AI hàng ngày.
+Hạng mục - Cập nhật & Huấn luyện "Bộ Não" AI định kỳ: Thiết lập kênh liên hệ chuyên biệt (qua Zalo/Email) để bạn dễ dàng gửi các thông tin mới và chúng tôi chủ động lên kế hoạch cập nhật kiến thức cho AI.
+Hạng mục - Huấn luyện kiến thức mới: Đội ngũ của chúng tôi sẽ liên tục "dạy" cho AI các thông tin bạn cung cấp, bao gồm: Bộ nguyên tắc giao tiếp, Danh mục sản phẩm, dịch vụ, Quy định & quy chế làm việc, Bộ câu hỏi thường gặp (FAQ).
+Hạng mục - Giám sát & Tối ưu hiệu suất liên tục: Chúng tôi sẽ chủ động phân tích các cuộc hội thoại của AI để xác định các "lỗ hổng" kiến thức hoặc những tình huống xử lý chưa tốt và tinh chỉnh lại kịch bản và kiến thức.
+Hạng mục - Hỗ trợ kỹ thuật ưu tiên: Mọi thắc mắc hay yêu cầu của bạn liên quan đến hoạt động của AI sẽ được ghi nhận và xử lý trong thời gian nhanh nhất qua kênh hỗ trợ riêng.
+Cam kết - Sẵn sàng bàn giao nhanh chóng: Bất cứ khi nào bạn muốn tự mình vận hành, chúng tôi cam kết sẽ thực hiện quy trình bàn giao toàn bộ tài khoản Smax và các thông tin liên quan cho bạn trong vòng 24 giờ làm việc.
+Cam kết - Tiếp tục hỗ trợ cộng đồng lâu dài: Ngay cả khi bạn quyết định ngưng Gói 3 để tự vận hành, bạn vẫn mãi là một thành viên quan trọng của cộng đồng ledacchien.com và được tham gia các nhóm, buổi Zoom hỗ trợ.
+Lợi ích lớn nhất: Sự An Tâm Tuyệt Đối. Bạn sở hữu một trợ lý AI mạnh mẽ, luôn được chăm sóc và phát triển bởi chuyên gia mà không cần tốn thời gian và công sức của mình, đồng thời vẫn giữ toàn quyền quyết định và được hỗ trợ dài lâu.
+
+# 3. KHUNG VẬN HÀNH & HỢP TÁC
+Niềm tin: Chúng tôi tin rằng một sự hợp tác tuyệt vời được xây dựng trên sự rõ ràng và tin tưởng. Phần này sẽ giải thích chính xác hành trình của bạn tại ledacchien.com sẽ diễn ra như thế nào, bạn sẽ nhận được sự hỗ trợ ra sao, và làm thế nào để chúng ta cùng nhau đạt được kết quả tốt nhất.
+
+## 3.1. Quy Trình Làm Việc Chuẩn
+Mô tả: Dù bạn tham gia một khóa học hay triển khai một dự án AI, hành trình của bạn cùng chúng tôi luôn đi qua các bước rõ ràng.
+Giai Đoạn 1 (Tư vấn): Khám Phá & Lựa Chọn. Chúng ta sẽ cùng nhau trò chuyện để hiểu rõ mục tiêu và mong muốn của bạn. Dựa trên đó, chúng tôi sẽ tư vấn và demo trực tiếp các giải pháp phù hợp nhất. Bạn sẽ nhận được một báo giá chi tiết, không có chi phí ẩn.
+Giai Đoạn 2 (Triển khai Dự án AI): Xây Dựng & Sáng Tạo. Khi bạn đã sẵn sàng, chúng ta sẽ chính thức khởi động dự án. Chúng tôi sẽ xây dựng và huấn luyện Trợ lý AI dựa trên nguyên liệu bạn cung cấp. Bạn sẽ tham gia vào quá trình thử việc và góp ý. Cuối cùng, chúng tôi sẽ tổ chức đào tạo và bàn giao toàn bộ tài sản số.
+Giai Đoạn 3 (Hỗ trợ): Vận Hành & Đồng Hành. Đối với các dịch vụ vận hành, chúng tôi sẽ hoạt động như một đội ngũ kỹ thuật của riêng bạn. Mọi yêu cầu hỗ trợ sẽ được tiếp nhận qua kênh ưu tiên và xử lý nhanh chóng. Chúng tôi sẽ chủ động bảo trì và theo dõi hiệu suất hệ thống.
+
+## 3.2. Hệ Sinh Thái Hỗ Trợ Khách Hàng & Học Viên
+Triết lý hỗ trợ: Chúng tôi không chỉ bán một sản phẩm rồi thôi. Chúng tôi xây dựng một hệ sinh thái để đồng hành cùng bạn.
+Minh bạch tuyệt đối: Mọi chính sách, chi phí đều được công khai. Bạn sẽ luôn biết mình đang trả tiền cho cái gì. Các thông báo gia hạn dịch vụ luôn được gửi trước để bạn chủ động.
+Cộng đồng năng động: Bạn sẽ được tham gia vào các nhóm Zalo/Facebook, nơi bạn có thể hỏi đáp, chia sẻ kinh nghiệm và học hỏi từ những người khác. Các buổi "Giờ Vàng Hỏi Đáp" và workshop "Chữa bài" hàng tuần/tháng sẽ giúp bạn giải quyết mọi vướng mắc.
+Cam kết đồng hành dài hạn: Với các khóa học, bạn được cấp quyền truy cập tài liệu trọn đời. Với các dịch vụ, bạn có một kênh hỗ trợ riêng luôn sẵn sàng giúp đỡ.
+
+## 3.3. Quy Chế Hợp Tác
+Tinh thần hợp tác: Thành công của một dự án đến từ sự phối hợp của cả hai bên. Giống như xây một ngôi nhà, chúng tôi là đội thợ lành nghề, còn bạn là chủ nhà cung cấp bản vẽ và ý tưởng.
+Cam kết từ ledacchien.com - Chất lượng: Chúng tôi cam kết cung cấp dịch vụ và sản phẩm đúng như những gì đã mô tả.
+Cam kết từ ledacchien.com - Tận tâm: Mọi thắc mắc của bạn đều được lắng nghe và giải quyết.
+Cam kết từ ledacchien.com - Trao quyền: Mục tiêu cuối cùng là giúp bạn làm chủ công nghệ. Chúng tôi sẽ bàn giao 100% tài sản số và quyền kiểm soát cho bạn.
+Yêu cầu từ khách hàng - Xác định rõ mục tiêu: Hãy cho chúng tôi biết đích đến của bạn, chúng tôi sẽ giúp bạn tìm con đường.
+Yêu cầu từ khách hàng - Cung cấp "nguyên liệu" chất lượng: Dữ liệu về sản phẩm, dịch vụ, các câu hỏi khách hàng thường hỏi của bạn càng chi tiết, Trợ lý AI của bạn sẽ càng thông minh.
+Yêu cầu từ khách hàng - Phản hồi tích cực: Sự góp ý của bạn trong giai đoạn thử nghiệm là vô giá để sản phẩm cuối cùng thực sự là "của bạn".
+Yêu cầu từ khách hàng - Mang tinh thần chủ động: Chúng tôi trao cho bạn công cụ mạnh mẽ và hướng dẫn chi tiết. Sự chủ động tìm tòi và áp dụng của bạn sẽ quyết định hiệu quả cuối cùng.
+
+# 4. ĐIỀU KHOẢN THƯƠNG MẠI & CÁC BƯỚC TIẾP THEO
+Thanh toán - Dịch vụ Triển khai AI (Gói 1 & 2): Phí sẽ được thanh toán 100% một lần trước khi dự án bắt đầu để chúng tôi khởi động công việc.
+Thanh toán - Dịch vụ Vận hành (Gói 3): Phí được thanh toán theo từng tháng. Bạn có thể đăng ký hoặc hủy bỏ rất linh hoạt.
+Bảo mật: Chúng tôi cam kết bảo mật tuyệt đối mọi thông tin kinh doanh và dữ liệu bạn cung cấp.
+Lời kêu gọi hành động: Chúng tôi tin rằng công nghệ là để phục vụ con người, và chúng tôi ở đây để giúp bạn biến công nghệ thành lợi thế cạnh tranh. Nếu bạn đã sẵn sàng, hãy liên hệ với chúng tôi để có một buổi tư vấn 1-1 miễn phí. Chúng ta sẽ cùng nhau tìm ra giải pháp phù hợp nhất cho hành trình của bạn.
+```
