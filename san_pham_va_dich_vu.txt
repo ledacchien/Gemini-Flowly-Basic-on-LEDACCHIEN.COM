@@ -62,7 +62,7 @@ Giá & Chính sách:
   - Giá khóa học: 950.000 VNĐ.
   - Chính sách truy cập & hỗ trợ: Truy cập tài nguyên trọn đời, hỗ trợ Zoom hàng tuần & cập nhật tài nguyên (liên hệ Support để gia hạn khóa học miễn phí).
 
-### Khóa học: Tạo AI Agent Siêu Tốc: 15 Phút Thành Thạo
+### Khóa học: Tạo AI Agent Siêu Tốc 15 Phút Thành Thạo
 Mô tả khóa học:
   - Tin vui cho bạn đây! Chúng tôi đã "đóng gói" thành công công nghệ AI phức tạp thành một sản phẩm đơn giản, trực quan và sẵn sàng chuyển giao cho bạn.
   - Khóa học này sẽ biến điều không thể thành có thể: tự tay xây dựng một Website AI Agent của riêng bạn với chi phí thấp không tưởng. (Ghi chú: Đây không phải website thông thường chỉ để hiển thị thông tin, mà là một website "sống" có thể trò chuyện, tư vấn, báo giá và làm việc cho bạn như một nhân viên thực thụ).
@@ -108,7 +108,7 @@ Chính Sách Chung & Hỗ Trợ Đặc Biệt Về API Key:
   - Hướng dẫn làm chủ API Key: Song song đó, chúng tôi sẽ hướng dẫn chi tiết cho đến khi bạn hoàn toàn làm chủ kỹ năng tự tạo và quản lý các API key miễn phí cho tất cả các dự án trong tương lai của mình.
   - Quyền lợi vĩnh viễn: Dù chọn gói nào, bạn cũng được truy cập trọn đời video, tài liệu, được cập nhật kiến thức mới và tham gia cộng đồng hỗ trợ vĩnh viễn.
 
-### Khóa học: Làm chủ AI Agent: Lập trình AI không cần biết code
+### Khóa học: Làm chủ AI Agent Lập trình AI không cần biết code
 Mô tả khóa học:
   - Đột phá cho người mới bắt đầu: Khóa học giúp bạn tiếp cận lập trình Python – ngôn ngữ phổ biến nhất, nền tảng quan trọng trong lĩnh vực trí tuệ nhân tạo hiện nay.
   - No-Code/Low-Code: Bạn không cần biết lập trình vẫn có thể tự tạo, chỉnh sửa, triển khai các ứng dụng AI Agent, sử dụng phương pháp kéo-thả hoặc chỉnh sửa code mẫu có sẵn.
