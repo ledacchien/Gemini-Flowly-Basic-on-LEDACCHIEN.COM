@@ -34,8 +34,7 @@ with st.sidebar:
     st.title("⚙️ Tùy chọn")
     
     if st.button("🗑️ Xóa cuộc trò chuyện"):
-        # Xóa model và history để khởi tạo lại hoàn toàn
-        if "model" in st.session_state: del st.session_state.model
+        if "chat" in st.session_state: del st.session_state.chat
         if "history" in st.session_state: del st.session_state.history
         st.rerun()
 
@@ -43,10 +42,10 @@ with st.sidebar:
     st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
 
-# ==== KHỞI TẠO ỨNG DỤNG (PHIÊN BẢN TÁCH FILE - KHÔNG TRÍ NHỚ) ====
-def initialize_app():
+# ==== KHỞI TẠO CHATBOT (PHIÊN BẢN CÓ TRÍ NHỚ - TÁCH FILE) ====
+def initialize_chat():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
-    if "model" not in st.session_state or "history" not in st.session_state:
+    if "chat" not in st.session_state or "history" not in st.session_state:
         model_name = rfile("module_gemini.txt")
         initial_assistant_message = rfile("02.assistant.txt")
 
@@ -63,8 +62,7 @@ def initialize_app():
         system_instruction = f"{role_instructions}\n\n---\n\n{product_data}"
         # ----------------------------------------
 
-        # Lưu model đã được cấu hình vào session_state
-        st.session_state.model = genai.GenerativeModel(
+        model = genai.GenerativeModel(
             model_name=model_name.strip(),
             system_instruction=system_instruction,
             safety_settings={
@@ -75,12 +73,13 @@ def initialize_app():
             }
         )
         
-        # History vẫn cần để hiển thị giao diện chat
+        # Khởi tạo lại phiên trò chuyện có nhớ
+        st.session_state.chat = model.start_chat(history=[])
         st.session_state.history = [
             {"role": "model", "parts": [initial_assistant_message]}
         ]
 
-initialize_app()
+initialize_chat()
 
 # ==== GIAO DIỆN NGƯỜI DÙNG ====
 try:
@@ -115,8 +114,8 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
-                # Sử dụng generate_content để AI không nhớ lịch sử
-                response = st.session_state.model.generate_content(prompt, stream=True)
+                # SỬ DỤNG send_message ĐỂ AI GHI NHỚ LỊCH SỬ
+                response = st.session_state.chat.send_message(prompt, stream=True)
                 
                 def stream_handler():
                     for chunk in response:
