@@ -1,4 +1,6 @@
 2. DANH MỤC SẢN PHẨM & DỊCH VỤ
+
+
 ---
 ledacchien.com cam kết cung cấp các giải pháp toàn diện bao gồm đào tạo kỹ năng số và triển khai công nghệ AI, nhằm giúp cá nhân và doanh nghiệp đạt được hiệu quả tối ưu trong thời đại số.
 2.1. Mảng Đào Tạo: Các Khóa Học Kỹ Năng Số
@@ -113,6 +115,8 @@ Chính Sách Chung & Hỗ Trợ Đặc Biệt Về API Key:
   - Hỗ trợ API Key ban đầu: Để đảm bảo bạn có thể bắt đầu ngay lập tức, khi tham gia khóa học, chúng tôi sẽ cung cấp miễn phí API key để bạn sử dụng trong giai đoạn đầu.
   - Hướng dẫn làm chủ API Key: Song song đó, chúng tôi sẽ hướng dẫn chi tiết cho đến khi bạn hoàn toàn làm chủ kỹ năng tự tạo và quản lý các API key miễn phí cho tất cả các dự án trong tương lai của mình.
   - Quyền lợi vĩnh viễn: Dù chọn gói nào, bạn cũng được truy cập trọn đời video, tài liệu, được cập nhật kiến thức mới và tham gia cộng đồng hỗ trợ vĩnh viễn.
+Lưu ý khi tư vấn sản phẩm:
+  - App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng
 
 2.1.4. Khóa học: Làm chủ AI Agent: Lập trình AI không cần biết code
 
@@ -149,6 +153,8 @@ Lợi ích đạt được:
 Giá & Chính sách:
   - Học phí trọn gói: 1.250.000 VNĐ (chưa bao gồm các tùy chọn nâng cấp, nếu có).
   - Chính sách truy cập & hỗ trợ: Học viên được truy cập tài nguyên trọn đời, cập nhật tài liệu mới, tham gia Zoom hỗ trợ hàng tuần. Hỗ trợ gia hạn khóa học miễn phí từng năm. Mọi chi phí nâng cấp nền tảng đều minh bạch.
+Lưu ý khi tư vấn sản phẩm:
+  - App AI Agent này không hỗ trợ theo dõi và lưu lại cuộc hội thoại của AI và Khách hàng
 
 2.1.5. Khóa học: Trở thành Chuyên gia Smax.ai
 
