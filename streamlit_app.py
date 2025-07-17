@@ -34,8 +34,7 @@ with st.sidebar:
     st.title("⚙️ Tùy chọn")
     
     if st.button("🗑️ Xóa cuộc trò chuyện"):
-        # Xóa model và history để khởi tạo lại hoàn toàn
-        if "model" in st.session_state: del st.session_state.model
+        if "chat" in st.session_state: del st.session_state.chat
         if "history" in st.session_state: del st.session_state.history
         st.rerun()
 
@@ -43,29 +42,23 @@ with st.sidebar:
     st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
 
-# ==== KHỞI TẠO ỨNG DỤNG (PHIÊN BẢN KHÔNG TRÍ NHỚ) ====
-def initialize_app():
+# ==== KHỞI TẠO CHATBOT (PHIÊN BẢN GỘP FILE) ====
+def initialize_chat():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
-    if "model" not in st.session_state or "history" not in st.session_state:
+    if "chat" not in st.session_state or "history" not in st.session_state:
         model_name = rfile("module_gemini.txt")
+        # Đọc toàn bộ chỉ thị hệ thống từ một file duy nhất
+        system_instruction = rfile("01.system_trainning.txt")
         initial_assistant_message = rfile("02.assistant.txt")
 
-        # Đọc dữ liệu từ 2 file riêng biệt
-        role_instructions = rfile("01.system_trainning.txt")
-        product_data = rfile("san_pham_va_dich_vu.txt")
-
         # Kiểm tra xem các file có được đọc thành công không
-        if not all([model_name, role_instructions, product_data, initial_assistant_message]):
+        if not all([model_name, system_instruction, initial_assistant_message]):
             st.error("Không thể khởi tạo chatbot do thiếu một trong các tệp cấu hình.")
             st.stop()
 
-        # Ghép nội dung từ hai file lại với nhau để làm chỉ thị hệ thống
-        system_instruction = f"{role_instructions}\n\n---\n\n{product_data}"
-
-        # Lưu model đã được cấu hình vào session_state
-        st.session_state.model = genai.GenerativeModel(
+        model = genai.GenerativeModel(
             model_name=model_name.strip(),
-            system_instruction=system_instruction,
+            system_instruction=system_instruction, # Sử dụng nội dung từ 1 file
             safety_settings={
                 HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
                 HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
@@ -74,16 +67,15 @@ def initialize_app():
             }
         )
         
-        # History vẫn cần để hiển thị giao diện chat
+        st.session_state.chat = model.start_chat(history=[])
         st.session_state.history = [
             {"role": "model", "parts": [initial_assistant_message]}
         ]
 
-initialize_app()
+initialize_chat()
 
 # ==== GIAO DIỆN NGƯỜI DÙNG ====
 try:
-    # Căn giữa logo
     col1, col2, col3 = st.columns([3, 2, 3])
     with col2:
         st.image("logo.png", use_container_width=True)
@@ -114,15 +106,14 @@ if prompt := st.chat_input("Bạn cần tư vấn gì?"):
     with st.chat_message("assistant"):
         with st.spinner("Trợ lý đang soạn câu trả lời..."):
             try:
-                # Sử dụng generate_content để AI không nhớ lịch sử
-                response = st.session_state.model.generate_content(prompt, stream=True)
+                response = st.session_state.chat.send_message(prompt, stream=True)
                 
                 def stream_handler():
                     for chunk in response:
                         yield chunk.text
                 
                 full_response = st.write_stream(stream_handler)
-                # Thêm tin nhắn hoàn chỉnh của AI vào lịch sử để hiển thị
+                # Thêm tin nhắn hoàn chỉnh của AI vào lịch sử
                 st.session_state.history.append({"role": "model", "parts": [full_response]})
 
             except Exception as e:
