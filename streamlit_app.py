@@ -43,20 +43,25 @@ with st.sidebar:
     st.markdown("Một sản phẩm của [Lê Đắc Chiến](https://ledacchien.com)")
 
 
-# ==== KHỞI TẠO ỨNG DỤNG (PHIÊN BẢN KHÔNG TRÍ NHỚ - GỘP FILE) ====
+# ==== KHỞI TẠO ỨNG DỤNG (PHIÊN BẢN TÁCH FILE - KHÔNG TRÍ NHỚ) ====
 def initialize_app():
     """Khởi tạo mô hình và lịch sử chat nếu chưa có."""
     if "model" not in st.session_state or "history" not in st.session_state:
         model_name = rfile("module_gemini.txt")
         initial_assistant_message = rfile("02.assistant.txt")
 
-        # Đọc toàn bộ chỉ thị hệ thống từ một file duy nhất
-        system_instruction = rfile("01.system_trainning.txt")
+        # --- ĐỌC DỮ LIỆU TỪ 2 FILE RIÊNG BIỆT ---
+        role_instructions = rfile("01.system_trainning.txt")
+        product_data = rfile("san_pham_va_dich_vu.txt")
 
         # Kiểm tra xem các file có được đọc thành công không
-        if not all([model_name, system_instruction, initial_assistant_message]):
+        if not all([model_name, role_instructions, product_data, initial_assistant_message]):
             st.error("Không thể khởi tạo chatbot do thiếu một trong các tệp cấu hình.")
             st.stop()
+
+        # Ghép nội dung từ hai file lại với nhau để làm chỉ thị hệ thống
+        system_instruction = f"{role_instructions}\n\n---\n\n{product_data}"
+        # ----------------------------------------
 
         # Lưu model đã được cấu hình vào session_state
         st.session_state.model = genai.GenerativeModel(
