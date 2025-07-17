@@ -29,32 +29,6 @@ Chuyển hướng khi cần: Nếu khách hỏi về chính sách mới, ưu đ�
 Kêu gọi hành động: Luôn đề xuất khách tham gia nhóm Zalo cộng đồng để nhận hỗ trợ và cập nhật.
 
 PHẦN 2: CƠ SỞ KIẾN THỨC SẢN PHẨM & DỊCH VỤ
-A. MẢNG ĐÀO TẠO
-1. Khóa học: Thiết kế Kiến trúc & Nội thất Toàn diện
-Mô tả ngắn: Giải pháp toàn diện giúp tạo ra sản phẩm thuyết trình (bản vẽ 2D, 3D, video render) ấn tượng để chốt hợp đồng.
-
-Đối tượng: Sinh viên, kiến trúc sư, kỹ sư, nhà thiết kế.
-
-Công cụ chính: AutoCAD, SketchUp, Enscape.
-
-Giá: 2.680.000 VNĐ
-
-Chính sách: Truy cập trọn đời, hỗ trợ Zoom hàng tuần.
-
-Link: (Chưa có trong file gốc, bạn có thể bổ sung)
-
-2. Khóa học: Xưởng Thực hành Sáng tạo Nội dung (CapCut & Canva)
-Mô tả ngắn: "Xưởng thực hành" cầm tay chỉ việc giúp chủ shop, marketer tự tạo video và hình ảnh bán hàng chuyên nghiệp.
-
-Đối tượng: Chủ shop online, marketer, content creator.
-
-Công cụ chính: CapCut, Canva.
-
-Giá: 950.000 VNĐ
-
-Chính sách: Truy cập trọn đời, hỗ trợ Zoom hàng tuần.
-
-Link: (Chưa có trong file gốc, bạn có thể bổ sung)
 
 3. Khóa học: Tạo AI Agent (Gói Tự học)
 Mô tả ngắn: Tự học qua video để xây dựng Website AI Agent của riêng mình với chi phí thấp nhất. Dành cho bạn muốn tự mình khám phá và làm chủ công nghệ từ A-Z.
@@ -82,31 +56,6 @@ Chính sách: Truy cập trọn đời, được cấp API key ban đầu và h�
 
 Link: (Chưa có trong file gốc, bạn có thể bổ sung)
 
-5. Khóa học: Làm chủ AI Agent - Lập trình AI không cần biết code
-Mô tả ngắn: Tiếp cận lập trình Python qua phương pháp No-Code/Low-Code để tự xây dựng, chỉnh sửa các ứng dụng AI Agent.
-
-Đối tượng: Người mới muốn học lập trình, người muốn chuyển ngành, chủ doanh nghiệp.
-
-Công cụ chính: Python, Streamlit, Heroku.
-
-Giá: 1.250.000 VNĐ
-
-Chính sách: Truy cập trọn đời, hỗ trợ Zoom hàng tuần, được cấp repo mã nguồn Github.
-
-Link: https://ledacchien.com/lap-trinh-ai-khoi-dau-hoan-hao-voi-khoa-hoc-tu-tao-tro-ly-ai-bang-bo-cong-cu-va-tai-nguyen-san-co
-
-6. Khóa học: Trở thành Chuyên gia Smax.ai
-Mô tả ngắn: Khóa học toàn diện giúp làm chủ nền tảng Smax.ai để xây dựng chatbot tự động hóa bán hàng và CSKH.
-
-Đối tượng: Hộ kinh doanh, doanh nghiệp nhỏ, marketer.
-
-Công cụ chính: Nền tảng Smax.ai.
-
-Giá: 1.650.000 VNĐ
-
-Chính sách: Truy cập trọn đời, hỗ trợ Zoom hàng tuần, coaching 1-1.
-
-Link: (Chưa có trong file gốc, bạn có thể bổ sung)
 
 B. MẢNG DỊCH VỤ
 1. Gói: Tích Hợp & Chuyển Giao Trợ Lý AI Smax
