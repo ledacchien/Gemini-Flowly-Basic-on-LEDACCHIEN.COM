@@ -5,6 +5,10 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
 # ==== CẤU HÌNH BAN ĐẦU ====
 
+# --- Cấu hình trang ---
+# Phải là lệnh Streamlit đầu tiên, đặt layout thành "wide" để hiển thị đẹp hơn
+st.set_page_config(page_title="Trợ lý AI", page_icon="🤖", layout="wide")
+
 # --- Hàm đọc file ---
 def rfile(name_file):
     """Hàm đọc nội dung từ file văn bản một cách an toàn."""
@@ -82,20 +86,27 @@ def initialize_chat():
 initialize_chat()
 
 # ==== GIAO DIỆN NGƯỜI DÙNG ====
-try:
-    # Căn giữa logo
-    col1, col2, col3 = st.columns([3, 2, 3])
-    with col2:
-        st.image("logo.png", use_container_width=True)
-except FileNotFoundError:
-    st.warning("Không tìm thấy tệp 'logo.png'.")
 
-title_content = rfile("00.xinchao.txt")
+# --- Hiển thị logo và tiêu đề ---
+# Căn giữa logo với tỷ lệ [1, 1, 1] để logo to hơn
+try:
+    logo_col1, logo_col2, logo_col3 = st.columns([1, 1, 1])
+    with logo_col2:
+        # Giả sử logo nằm trong thư mục system_data giống app trước
+        # Nếu không, hãy đổi lại thành "logo.png"
+        st.image("system_data/logo.png", use_container_width=True)
+except FileNotFoundError:
+    st.warning("Không tìm thấy tệp logo. Vui lòng kiểm tra đường dẫn 'system_data/logo.png'.")
+
+
+title_content = rfile("system_data/00.xinchao.txt")
 if title_content:
     st.markdown(
         f"""<h1 style="text-align: center; font-size: 24px;">{title_content}</h1>""",
         unsafe_allow_html=True
     )
+
+st.divider()
 
 # --- Hiển thị lịch sử chat ---
 for message in st.session_state.history:
