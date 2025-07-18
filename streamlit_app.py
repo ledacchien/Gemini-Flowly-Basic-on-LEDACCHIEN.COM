@@ -16,7 +16,7 @@ def rfile(name_file):
         with open(name_file, "r", encoding="utf-8") as file:
             return file.read()
     except FileNotFoundError:
-        st.error(f"Lỗi: Không tìm thấy tệp '{name_file}'. Vui lòng kiểm tra lại.")
+        # Không hiển thị lỗi ở đây để tránh làm rối giao diện, hàm sẽ trả về None
         return None
     except Exception as e:
         st.error(f"Lỗi khi đọc tệp '{name_file}': {e}")
@@ -59,7 +59,7 @@ def initialize_chat():
 
         # Kiểm tra xem các file có được đọc thành công không
         if not all([model_name, role_instructions, product_data, initial_assistant_message]):
-            st.error("Không thể khởi tạo chatbot do thiếu một trong các tệp cấu hình.")
+            st.error("Không thể khởi tạo chatbot do thiếu một trong các tệp cấu hình chính.")
             st.stop()
 
         # Ghép nội dung từ hai file lại với nhau để làm chỉ thị hệ thống
@@ -88,23 +88,23 @@ initialize_chat()
 # ==== GIAO DIỆN NGƯỜI DÙNG ====
 
 # --- Hiển thị logo và tiêu đề ---
-# Căn giữa logo với tỷ lệ [1, 1, 1] để logo to hơn
-try:
+# Kiểm tra sự tồn tại của file trước khi hiển thị để tránh crash app
+logo_path = "system_data/logo.png"
+if os.path.exists(logo_path):
+    # Căn giữa logo với tỷ lệ [1, 1, 1] để logo to hơn
     logo_col1, logo_col2, logo_col3 = st.columns([1, 1, 1])
     with logo_col2:
-        # Giả sử logo nằm trong thư mục system_data giống app trước
-        # Nếu không, hãy đổi lại thành "logo.png"
-        st.image("system_data/logo.png", use_container_width=True)
-except FileNotFoundError:
-    st.warning("Không tìm thấy tệp logo. Vui lòng kiểm tra đường dẫn 'system_data/logo.png'.")
+        st.image(logo_path, use_container_width=True)
 
-
-title_content = rfile("system_data/00.xinchao.txt")
-if title_content:
-    st.markdown(
-        f"""<h1 style="text-align: center; font-size: 24px;">{title_content}</h1>""",
-        unsafe_allow_html=True
-    )
+# Tương tự, kiểm tra sự tồn tại của file tiêu đề
+title_path = "system_data/00.xinchao.txt"
+if os.path.exists(title_path):
+    title_content = rfile(title_path)
+    if title_content:
+        st.markdown(
+            f"""<h1 style="text-align: center; font-size: 24px;">{title_content}</h1>""",
+            unsafe_allow_html=True
+        )
 
 st.divider()
 
