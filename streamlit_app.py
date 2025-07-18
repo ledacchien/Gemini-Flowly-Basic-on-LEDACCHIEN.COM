@@ -89,15 +89,15 @@ initialize_chat()
 
 # --- Hiển thị logo và tiêu đề ---
 # Kiểm tra sự tồn tại của file trước khi hiển thị để tránh crash app
-logo_path = "system_data/logo.png"
+logo_path = "logo.png"
 if os.path.exists(logo_path):
-    # Căn giữa logo với tỷ lệ [1, 1, 1] để logo to hơn
+    # SỬA LỖI: Căn giữa logo với tỷ lệ [1, 1, 1] để logo to hơn
     logo_col1, logo_col2, logo_col3 = st.columns([1, 1, 1])
     with logo_col2:
         st.image(logo_path, use_container_width=True)
 
 # Tương tự, kiểm tra sự tồn tại của file tiêu đề
-title_path = "system_data/00.xinchao.txt"
+title_path = "00.xinchao.txt"
 if os.path.exists(title_path):
     title_content = rfile(title_path)
     if title_content:
